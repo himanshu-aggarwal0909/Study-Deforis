@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+
+
+    <TextView
+        android:id="@+id/activity_displayuserdata_row_layout_username"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/activity_display_user_data_row_layout_txtext"
+        android:layout_alignParentLeft="true"
+
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge">
+
+    </TextView>
+    <TextView
+        android:id="@+id/activity_displayuserdata_row_layout_useremail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/activity_display_user_data_row_layout_txtext"
+        android:layout_toRightOf="@+id/activity_displayuserdata_row_layout_username"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/activity_displayuserdata_row_layout_user_username"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/activity_display_user_data_row_layout_txtext"
+        android:layout_toRightOf="@+id/activity_displayuserdata_row_layout_useremail"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/activity_displayuserdata_row_layout_userpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/activity_display_user_data_row_layout_txtext"
+        android:layout_toRightOf="@+id/activity_displayuserdata_row_layout_user_username"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+
+
+
+
+</RelativeLayout>

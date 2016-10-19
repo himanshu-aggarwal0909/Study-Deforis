@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/activity_display_universities_each_row_collegename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hellokjjkjkjkj"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:text="hello"
+        android:id="@+id/activity_display_universities_each_row_collegecountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_display_universities_each_row_collegename"
+        />
+    <TextView
+        android:text="hello"
+        android:id="@+id/activity_display_universities_each_row_collegetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_display_universities_each_row_collegecountry"
+        />
+    <TextView
+        android:text="hello"
+        android:id="@+id/activity_display_universities_each_row_collegefees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_display_universities_each_row_collegetype"
+        />
+
+
+
+</RelativeLayout>

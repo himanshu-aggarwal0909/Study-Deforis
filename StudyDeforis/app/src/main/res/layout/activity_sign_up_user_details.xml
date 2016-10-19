@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.himanshu.studydeforis.SignUpUserDetails"
+    android:background="#dcdcdc">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/signupuserdetails_layout_undergraduate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signupuserdetails_oxes"
+                android:padding="20dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signupuserdetails_text"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#000066"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/signupuserdetails_collegename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:hint="@string/signupuserdetails_collegenamehint"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/signupuserdetails_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signupuserdetails_collegename"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/signupuserdetails_coursehint"
+                    />
+
+                <TextView
+                    android:id="@+id/signupuserdetails_collegescoretext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signupuserdetails_collegescore"
+                    android:layout_below="@+id/signupuserdetails_course"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#000066"
+                    />
+
+                <EditText
+                    android:id="@+id/signupuserdetails_collegescore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signupuserdetails_collegescoretext"
+                    android:hint="@string/signupuserdetails_collegescore_hint"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/signupuserdetails_layout_workexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/signupuserdetails_layout_undergraduate"
+                android:background="@drawable/signupuserdetails_oxes"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/signupuserdetails_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signupuserdetails_work"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#000066"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/signupuserdetails_workexptimetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signupuserdetails_workextimetext"
+                    android:layout_below="@+id/signupuserdetails_work"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/signupuserdetails_workexptime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signupuserdetails_work"
+                    android:inputType="numberDecimal"
+                    android:layout_toRightOf="@+id/signupuserdetails_workexptimetext" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/signupuserdetails_layout_dream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signupuserdetails_layout_workexp"
+                android:layout_marginTop="15dp"
+                android:padding="20dp"
+                android:background="@drawable/signupuserdetails_oxes">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signupuserdetails_dream"
+                    android:textColor="#000066"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/signupuserdetails_Dreamcourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:hint="@string/signupuserdetails_coursehint"
+                    />
+                <AutoCompleteTextView
+                    android:id="@+id/signupuserdetails_Dreamcollegename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/signupuserdetails_collegenamehint"
+                    android:layout_below="@+id/signupuserdetails_Dreamcourse"/>
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/signupuserdetails_savebutton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/signupuserdetails_savebuton"
+                android:layout_below="@+id/signupuserdetails_layout_dream"
+                android:layout_gravity="right"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signupuserdetails_savebutton"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
